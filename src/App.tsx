@@ -1,4 +1,4 @@
-import { useState }  from 'react'; 'react'
+import { useState } from 'react'; 'react'
 import { BsWhatsapp } from 'react-icons/bs';
 import Logo from './assets/images/logo-usa1.svg';
 import Img from './assets/images/img2.jpg';
@@ -9,9 +9,11 @@ import Img5 from './assets/images/img5.png';
 
 export const App = () => {
 
-  const [us, setUseState] = useState()
 
-  return (
+    
+    const [language, setLanguage] = useState('us');
+ 
+  return (    
     <div className='w-full'>
       <div className='flex justify-center items-center '>
         <div className='w-full'>
@@ -37,6 +39,21 @@ export const App = () => {
           </ul>
         </nav>
       </div>
+
+
+
+
+      <div className='flex flex-col-2 justify-center itmns-center gap-2 mx-auto'>  
+    <button onClick={() => setLanguage('New language')}
+    className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'>English</button><br></br>
+    <button onClick={() => setLanguage('New language')}
+    className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'>Spanish</button>
+      </div>
+
+
+
+
+
 
       <div className='bg-image'>
         <div className='w-full px-8 py-24 bg-black bg-opacity-50 flex justify-end items-center'>
@@ -140,7 +157,7 @@ export const App = () => {
         <a
           href='https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural.'
           target='_blank'
-          className='bg-[#498b00] text-white py-3 px-10 flex justify-center items-center gap-3 rounded-xl mb-12 cursor-pointer hover:bg-green-900'
+          className='bg-[#498b00] text-white py-3 px-10 flex justify-center items-center gap-3 rounded-xl mb-20 cursor-pointer hover:bg-green-900'
         >
           <BsWhatsapp /> Contact Us
         </a>
