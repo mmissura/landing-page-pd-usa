@@ -24,7 +24,7 @@ export const App = () => {
           <ul className='flex justify-end gap-4'>
 
             <a
-              href='https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural.'
+              href='https://wa.me/14078677407'
               target='_blank'
               className='bg-[#498b00] text-white 2xl:text-xl xl:text-xl lg:text-xl text-xl 
               py-3 px-4 2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center 
@@ -55,7 +55,7 @@ export const App = () => {
                   <div className='w-full flex justify-center items-center'>
 
                     <a
-                      href='https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural.'
+                      href='https://wa.me/14078677407'
                       target='_blank'
                       className='bg-[#498b00] text-white 2xl:text-xl xl:text-xl lg:text-xl text-lg py-3 px-4 
                         2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl my-12 cursor-pointer hover:bg-green-900'
@@ -153,7 +153,7 @@ export const App = () => {
 
       <section className='flex justify-center items-center mb-10'>
         <a
-          href='https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural.'
+          href='https://wa.me/14078677407'
           target='_blank'
           className='bg-[#498b00] text-white py-3 px-10 flex justify-center items-center gap-3 rounded-xl mb-12 cursor-pointer hover:bg-green-900'
         >
