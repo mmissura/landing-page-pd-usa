@@ -1,4 +1,4 @@
-import { useState } from 'react'; 'react'
+import { useState } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import Logo from './assets/images/logo-usa1.svg';
 import Img from './assets/images/img2.jpg';
@@ -6,13 +6,12 @@ import Img3 from './assets/images/img3.png';
 import Img4 from './assets/images/img4.png';
 import Img5 from './assets/images/img5.png';
 
+import { LANGUAGES } from './intl';
 
 export const App = () => {
-
-
-
-  const [language, setLanguage] = useState('us');
-  console.log("idioma atual", language)
+  type languageProps = 'US' | 'ES';
+  const [language, setLanguage] = useState<languageProps>('US');
+  console.log('idioma atual', language);
 
   return (
     <div className='w-full'>
@@ -41,37 +40,29 @@ export const App = () => {
         </nav>
       </div>
 
-
-
-
       <div className='flex flex-col-2 justify-center itmns-center gap-2 mx-auto'>
-
-        <button onClick={() => setLanguage('ES')}
-          className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'>
+        <button
+          onClick={() => setLanguage('ES')}
+          className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'
+        >
           Spanish
         </button>
-        <button onClick={() => setLanguage('US')}
-          className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'>
+        <button
+          onClick={() => setLanguage('US')}
+          className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'
+        >
           English
         </button>
-
       </div>
-
-
-
-
-
 
       <div className='bg-image'>
         <div className='w-full px-8 py-24 bg-black bg-opacity-50 flex justify-end items-center'>
           <div className='2xl:w-1/2 xl:w-1/2 lg:w-1/2 w-full'>
             <p className='text-white 2xl:text-3xl lg:text-3xl text-3xl text-center font-bold'>
-              PD Energy USA designs, installs, and maintains solar panels for
-              homes.<br></br>
-              With solar energy, you can save on your energy bill, increase the
-              value of your home, and become sustainable.<br></br>
+              {LANGUAGES[language].HERO_TEXT.P1} <br></br>
+              {LANGUAGES[language].HERO_TEXT.P2} <br></br>
               <br></br>
-              Contact us to learn more.
+              {LANGUAGES[language].HERO_TEXT.P3}
             </p>
 
             <div className='w-full flex justify-center items-center mt-8'>
@@ -81,17 +72,12 @@ export const App = () => {
                 className='bg-[#498b00] text-white 2xl:text-xl xl:text-xl lg:text-xl text-lg py-3 px-4 
                         2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl cursor-pointer hover:bg-green-900'
               >
-                <BsWhatsapp /> Contact Us
+                <BsWhatsapp /> {LANGUAGES[language].WHATSAPP_TEXT}
               </a>
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
 
       <section className='w-full mt-20 mx-auto p-4 grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 justify-center items-center gap-6'>
         <div>
@@ -117,7 +103,8 @@ export const App = () => {
             Panel Cleaning
           </h2>
           <p className='text-slate-600 my-3 h-14 flex justify-center items-center'>
-            Cleaning the panel is essential for maximum performance of your system.
+            Cleaning the panel is essential for maximum performance of your
+            system.
           </p>
           <div className='w-full overflow-hidden'>
             <img
@@ -181,9 +168,11 @@ export const App = () => {
         shadow-lg w-full text-center text-sm m-auto'
       >
         Copyright © 2024 PD Energy USA. All rights reserved. Developed by
-        <a href='http://missura.com.br'
+        <a
+          href='http://missura.com.br'
           target='_blank'
-          className='text-white hover:text-black'>
+          className='text-white hover:text-black'
+        >
           {' '}
           Missura Networks.
         </a>
