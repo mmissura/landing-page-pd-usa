@@ -10,10 +10,11 @@ import Img5 from './assets/images/img5.png';
 export const App = () => {
 
 
-    
-    const [language, setLanguage] = useState('us');
- 
-  return (    
+
+  const [language, setLanguage] = useState('us');
+  console.log("idioma atual", language)
+
+  return (
     <div className='w-full'>
       <div className='flex justify-center items-center '>
         <div className='w-full'>
@@ -43,11 +44,17 @@ export const App = () => {
 
 
 
-      <div className='flex flex-col-2 justify-center itmns-center gap-2 mx-auto'>  
-    <button onClick={() => setLanguage('New language')}
-    className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'>English</button><br></br>
-    <button onClick={() => setLanguage('New language')}
-    className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'>Spanish</button>
+      <div className='flex flex-col-2 justify-center itmns-center gap-2 mx-auto'>
+
+        <button onClick={() => setLanguage('ES')}
+          className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'>
+          Spanish
+        </button>
+        <button onClick={() => setLanguage('US')}
+          className='bg-blue-500 text-white border-sm rounded-md p-2 mb-2'>
+          English
+        </button>
+
       </div>
 
 
@@ -87,7 +94,7 @@ export const App = () => {
 
 
       <section className='w-full mt-20 mx-auto p-4 grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 justify-center items-center gap-6'>
-      <div>
+        <div>
           <h2 className='text-center text-2xl text-green-600 font-bold'>
             Home Solar Systems
           </h2>
