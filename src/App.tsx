@@ -11,7 +11,9 @@ import { LANGUAGES } from './intl';
 export const App = () => {
   type languageProps = 'US' | 'ES';
   const [language, setLanguage] = useState<languageProps>('US');
-  console.log('idioma atual', language);
+  
+
+  
 
   return (
     <div className='w-full'>
@@ -58,7 +60,7 @@ export const App = () => {
       <div className='bg-image'>
         <div className='w-full px-8 py-24 bg-black bg-opacity-50 flex justify-end items-center'>
           <div className='2xl:w-1/2 xl:w-1/2 lg:w-1/2 w-full'>
-            <p className='text-white 2xl:text-3xl lg:text-3xl text-3xl text-center font-bold'>
+            <p className='text-white 2xl:text-3xl lg:text-3xl text-3xl text-center font-bold'>              
               {LANGUAGES[language].HERO_TEXT.P1} <br></br>
               {LANGUAGES[language].HERO_TEXT.P2} <br></br>
               <br></br>
@@ -82,11 +84,10 @@ export const App = () => {
       <section className='w-full mt-20 mx-auto p-4 grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 grid-cols-1 justify-center items-center gap-6'>
         <div>
           <h2 className='text-center text-2xl text-green-600 font-bold'>
-            Home Solar Systems
+          {LANGUAGES[language].SERVICES_TEXT1.TITLE}
           </h2>
           <p className='text-slate-600 my-3 h-14 flex justify-center items-center'>
-            Achieve energy independence, reduce your electricity bill with PD
-            Energy USA's solar system.
+          {LANGUAGES[language].SERVICES_TEXT1.P1}
           </p>
           <div className='w-full overflow-hidden'>
             <img
