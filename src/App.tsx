@@ -44,7 +44,7 @@ export const App = () => {
 
           <ul className="flex justify-end 2xl:px-24 xl:px-24 lg:px-24 px-4">
             <a
-              href="https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural."
+              href="https://api.whatsapp.com/send/?phone=14078677407"
               target="_blank"
               className="bg-[#498b00] text-white 2xl:text-xl xl:text-xl lg:text-xl text-xl 
               py-3 px-4 2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center 
@@ -68,7 +68,7 @@ export const App = () => {
 
             <div className="w-full flex justify-center items-center mt-8">
               <a
-                href="https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural."
+                href="https://api.whatsapp.com/send/?phone=14078677407"
                 target="_blank"
                 className="bg-[#498b00] text-white 2xl:text-xl xl:text-xl lg:text-xl text-lg py-3 px-4 
                         2xl:px-4 xl:px-4 lg:px-4 flex justify-center items-center gap-3 rounded-xl cursor-pointer hover:bg-green-900"
@@ -152,7 +152,7 @@ export const App = () => {
 
       <section className="flex justify-center items-center mt-12">
         <a
-          href="https://api.whatsapp.com/send/?phone=5519991711316&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+gera%C3%A7%C3%A3o+de+energia+solar+rural."
+          href="https://api.whatsapp.com/send/?phone=14078677407"
           target="_blank"
           className="bg-[#498b00] text-white py-3 px-10 flex justify-center items-center gap-3 rounded-xl mb-20 cursor-pointer hover:bg-green-900"
         >
