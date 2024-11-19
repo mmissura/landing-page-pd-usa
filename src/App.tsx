@@ -16,18 +16,18 @@ export const App = () => {
 
   return (
     <div className="w-full">
-      <div className="flex justify-center items-center ">
+      <div className="flex justify-center items-center mb-8">
         <div className="w-full">
           <img
             src={Logo}
-            className="2xl:w-1/2 xl:w-1/2 lg:w-1/2 w-3/4 2xl:mx-24 xl:mx-24 lg:mx-24 mx-6"
+            className="2xl:w-1/2 xl:w-1/2 mt-12 lg:w-1/2 w-4/5 2xl:mx-24 xl:mx-24 lg:mx-24 mx-6"
             alt="Logo PD Energy"
             title="Logo PD Energy"
           />
         </div>
 
         <nav className="w-full">
-          <div className="flex flex-col-2 justify-end itemns-center mx-auto px-4 mt-4">
+          <div className="flex flex-col-2 justify-end mx-4">
             <button
               onClick={() => setLanguage('ES')}
               className="border-sm rounded-md p-2 mb-2 w-12"
