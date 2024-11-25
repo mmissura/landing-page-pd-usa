@@ -156,7 +156,7 @@ export const App = () => {
           target="_blank"
           className="bg-[#498b00] text-white py-3 px-10 flex justify-center items-center gap-3 rounded-xl mb-20 cursor-pointer hover:bg-green-900"
         >
-          <BsWhatsapp /> Contact Us
+          <BsWhatsapp /> {LANGUAGES[language].WHATSAPP_TEXT}
         </a>
       </section>
 
