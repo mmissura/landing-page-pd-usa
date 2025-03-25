@@ -25,7 +25,7 @@ export const LANGUAGES: any = {
     },
     FOOTER_TEXT: {
       FOOTER:
-        'Copyright ©️ 2024 PD Energy USA. All rights reserved. Developed by',
+        'Copyright ©️ 2025 PD Energy USA. All rights reserved. Developed by',
     },
   },
   ES: {
@@ -53,7 +53,7 @@ export const LANGUAGES: any = {
     },
     FOOTER_TEXT: {
       FOOTER:
-        'Copyright ©️ 2024 PD Energy USA. Todos los derechos reservados. Desarrollado por',
+        'Copyright ©️ 2025 PD Energy USA. Todos los derechos reservados. Desarrollado por',
     },
   },
 };
